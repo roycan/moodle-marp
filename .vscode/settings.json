@@ -1,0 +1,7 @@
+// Please put `.vscode/settings.json` on your workspace
+{
+    "markdown.marp.themes": [
+    //   "https://example.com/foo/bar/custom-theme.css",
+      "marp-w3.css"
+    ]
+  }
