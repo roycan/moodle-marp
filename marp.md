@@ -21,6 +21,26 @@ theme: marp-w3
 
 ---
 
+According to a study funded by Google, under the direction of ACM, and in partnership with Microsoft: 
+<br>
+
+<div class="w3-xxxlarge">
+
+> "Computer science educators often struggle with limited access to up-to-date materials, software, and hardware" 
+> <span class="w3-right"> -University of Chicago Study </span>
+
+</div>
+
+<div class="w3-bottom w3-medium">
+1) Century et al. 2013. Building an Operating System report. https://outlier.uchicago.edu/computerscience/OS4CS/challenges/. Accessed 2024
+2) Doug Konopelko. 2024. Building an Operating System report. https://outlier.uchicago.edu/computerscience/OS4CS/challenges/. Accessed 2024
+</div>
+
+
+
+
+---
+
 ![bg opacity](img/kids.jpg)
 
 
@@ -98,6 +118,28 @@ Shell <br>
 
 </div>
 
+
+---
+
+![bg left:25%](img/lightbulb-student.png)
+
+# VPL Setup and Use
+
+1) ***Install VPL plugin*** - Installing Moodle VPL is a straightforward process that involves uploading the plugin package and configuring the settings.
+
+2) ***Setup VPL Jail Server*** - Involves setting up a dedicated server, installing the necessary packages, configuring the server, and testing the installation. 
+
+3) ***Create VPL Assignments*** - Creating VPL assignments involves careful planning, designing, and testing to ensure they align with learning objectives and effectively assess programming skills. 
+
+---
+
+# Citations
+
+- AI-gen picture: Leonardo AI. 2024. https://app.leonardo.ai/ai-generations
+- AI-gen picture: Cici AI. 2024. https://www.ciciai.com/chat
+- icons: Font Awesome. 2024. https://fontawesome.com/v6/
+
+
 ---
 
 # Introduction
@@ -158,3 +200,5 @@ Shell <br>
 * Recap of the key points covered in the talk
 * Encouraging further exploration and adoption of the Moodle VPL plugin
 * Thanking the audience for their participation and attention
+
+
