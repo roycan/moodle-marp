@@ -6,24 +6,48 @@
 @import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css';
 
 section {
-    background: cornsilk;
-    color: royalblue;
-  }
-  h1, h2, h3, h4, h5, h6{
-    font-family: 'Courier New', Courier, monospace
-  }
-  h1{
-    font-family: cursive;
-  }
+    background: #f2f2f2;
+    color: black;
+}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: cursive, sans-serif;
+    color: darkgreen;
+}
 
-  svg[id^="mermaid-"]{
-    min-width: 480px;
-    max-width: 960px;
-    min-height: 360px;
+.w3-capitalize{
+    text-transform: capitalize;
+}
+
+.w3-uppercase{
+    text-transform: uppercase;
+}
+
+.w3-lowercase{
+    text-transform: lowercase;
+}
+
+.w3-inline{
+    display: inline-block;
+}
+
+.mermaid text {
+    font-size: 18px;
+    font-weight: bold;
+    }
+
+svg[id^="mermaid-"] {
+    min-width: 640px;
+    max-width: 1000px;
+    min-height: 500px;
     max-height: 600px;
-  }
-  
+}
+
 
 /* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
 html {
@@ -2019,6 +2043,3 @@ a {
 .w3-hover-border-pale-blue:hover {
     border-color: #e7ffff !important
 }
-
-
-
