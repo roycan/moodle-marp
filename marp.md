@@ -287,7 +287,90 @@ Supported Programming Languages
 
 </div>
 
+
+
+
 ---
+
+
+![](img/becker2023-programming_is_hard.png)
+
+---
+
+![bg right:15%](img/bg.png)
+
+<!-- _footer: Becker, B. A., Denny, P., Finnie-Ansley, J., Luxton-Reilly, A., Prather, J., & Santos, E. A. (2023). Programming Is Hard – Or at Least It Used to Be: Educational Opportunities and Challenges of AI Code Generation. In Proceedings of the 54th ACM Technical Symposium on Computer Science Education V. 1 (SIGCSE 2023), March 15–18, 2023, Toronto, ON, Canada. https://doi.org/10.1145/3545945.3569759 -->
+
+
+<div class="w3-container w3-white w3-opacity w3-xxlarge">
+
+  Becker et al, in 2023, discussed ways in which AI tools can  help students learn programming:
+
+1. **AI-generated solutions** can provide students with model answers to programming exercises
+2. AI can generate **explanations of complex code**
+3. Educators can leave low-level code to A.I. then **shift the focus to algorithms** 
+4. AI-generated starter code can help students **combat programmer's writer's block**
+
+</div>
+
+
+
+
+---
+
+
+![](img/2023-ai_code_gen.png)
+
+---
+
+![bg right:15%](img/bg.png)
+
+<!-- _footer: Kazemitabaar, M., Chow, J., Ma, C. K. T., Ericson, B. J., Weintrop, D., & Grossman, T. (2023). Studying the Effect of AI Code Generators on Supporting Novice Learners in Introductory Programming. In Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems (CHI ’23), April 23–28, 2023, Hamburg, Germany.  https://doi.org/10.1145/3544548.3580919 -->
+
+
+<div class="w3-container w3-white w3-opacity w3-xlarge">
+
+  In a 2023 study that involved 69 novices aged 10-17, Kazemitabaar et al presented encouraging evidence that AI Coding Assistants can be integrated into programming education:
+
+1. Students using AI code generators like Codex showed **completed tasks faster and with higher scores**,
+2. Students with higher pre-test scores and access to Codex performed significantly **better in retention tests**
+3. Students using AI code generators felt **less stressed and more eager** to continue learning programming 
+4. Students used AI code generators to **break tasks into subgoals** and solve each subgoal step by step
+
+</div>
+
+
+
+---
+
+
+![](img/fitria2021-ai_in_educ.png)
+
+---
+
+![bg right:15%](img/bg.png)
+
+<!-- _footer: itria, T. N. (2021). Artificial intelligence (AI) in education: Using AI tools for teaching and learning process. Prosiding Seminar Nasional & Call for Paper STIE AAS, Surakarta, Jawa Tengah -->
+
+
+<div class="w3-container w3-white w3-opacity w3-xxlarge">
+
+  Fitria, in 2021, highlights the following aspects of A.I. for education:
+
+1. Students can have a more **Personalized Learning** experience with AI
+2. A.I. will be **Complementing Teachers**
+3. AI Applications can serve as **Virtual mentors / tutors** 
+4. A.I. carries potential technical issues like **cyberattacks and plagiarism.**
+
+</div>
+
+
+
+
+---
+
+
+
 
 ![bg left:25%](img/lightbulb-student.png)
 
