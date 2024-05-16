@@ -288,9 +288,23 @@ Supported Programming Languages
 </div>
 
 
+---
+
+
+![bg right:15%](img/bg.png)
+
+<div class="w3-container w3-black w3-center" style="position: absolute; top: 50; left: 50;">
+  <p class="w3-text-white" style="font-size: 50px; font-family: 'Courier New', monospace;">02</p>
+</div>
+
+
+<div class="w3-display-middle w3-jumbo">
+  Recent Studies on A.I. for Computer Science Education
+</div>
 
 
 ---
+
 
 
 ![](img/becker2023-programming_is_hard.png)
@@ -381,6 +395,210 @@ Supported Programming Languages
 2. **_Setup VPL Jail Server_** - Involves setting up a dedicated server, installing the necessary packages, configuring the server, and testing the installation.
 
 3. **_Create VPL Assignments_** - Creating VPL assignments involves careful planning, designing, and testing to ensure they align with learning objectives and effectively assess programming skills.
+
+---
+
+## VPL Plugin
+
+![bg right:70%](img/vpl-plugin.png)
+
+* Program in the browser.
+* Run tests to grade the programs.
+* Check for file similarity.
+* Restrict copy-pasting.
+
+
+<!-- _footer: https://moodle.org/plugins/mod_vpl -->
+
+---
+
+![bg right:15%](img/bg.png)
+
+#### Site Administration > Plugins > Activity Modules > Virtual Programming Lab > Execution servers config
+
+# --
+
+
+![w:1000](img/server_list.png)
+
+
+---
+
+![bg right:15%](img/bg.png)
+
+<div class="w3-margin w3-padding-large w3-xxlarge w3-display-left">
+
+# How did we get our own Jail server? 
+
+</div>
+
+---
+
+# https://www.linode.com
+
+![](img/linode.png)
+
+---
+
+# 1 CPU, 2GB RAM, 50GB Storage 
+
+![](img/linode-vpl.png)
+
+---
+
+# Ubuntu; Sg = $12 USD / mo.
+
+![](img/linode-price.png)
+
+---
+
+# Getting VPL-Jail-System
+
+![bg right:15%](img/bg.png)
+
+
+1. Enter your server 
+    * install Visual Studio Code and use the terminal there Open VSCode and press Ctrl-` (i.e. control backtick) 
+    * `ssh root@<your-server-ip>`
+2. Download the system:
+ `wget https://vpl.dis.ulpgc.es/releases/vpl-jail-system-4.0.2.tar.gz`
+3. Unzip the installer:
+  `tar xvf vpl-jail-system-4.0.2.tar.gz`
+
+---
+
+
+
+# Installing the VPL-Jail-System for the first time:
+
+![bg right:15%](img/bg.png)
+
+1. Go to the installer directory 
+    `cd vpl-jail-system-4.0.2`
+2. Run the installer as root
+  `sudo ./install-vpl-sh full start`
+---
+
+![bg right:15%](img/bg.png)
+
+# Tips for installing for the first time: 
+
+* say yes to **LetsEncrypt**  
+* put in your **email** when asked for
+* type in the given **fully qualified domain name** when asked for (e.g. from Linode)
+* say **no** to Kotlin   
+* say **no** to JGrasp  
+* then make sure to **accept the connections to VPL** when the browser directs you to
+> also go to the Local Execution Server, type a space in the box and then hit save. 
+
+---
+
+
+# If not using cron, run the following every 1 to 2 months
+
+ ```
+systemctl status vpl-jail-system.service
+systemctl restart vpl-jail-system.service
+
+cd ~
+cd vpl-jail-system-4.0.2
+./install-vpl-sh full noninteractive start
+```
+
+* This will renew your Let's Encrypt SSL certificate
+* You can run the code sooner if notice any problems with the VPL Jail Server
+* prepare to wait a bit, but the terminal should show you how things are going.
+
+---
+
+![bg right:15%](img/bg.png)
+
+# What it means:
+# -
+## `./install-vpl-sh full noninteractive start`
+# -
+
+* **full** means to install all the languages it fully supports
+* **noninteractive** means to NOT ask you to do anything
+* **start** means to start the server once the installation is finished
+
+---
+
+
+![bg right:15%](img/bg.png)
+
+
+# Automating daily VPL service restart
+
+* To set up a cron job to restart a service every day on Ubuntu 20.04
+    ` crontab -e`
+* In the crontab file, to restart the service every day at 3:00 AM, you can use:
+
+
+`0 3 * * * systemctl restart vpl-jail-system.service `
+
+>  When setting up cron jobs, it's important to ensure that the user running the cron job has the necessary permissions to restart the service.
+
+---
+
+
+
+![bg right:15%](img/bg.png)
+
+# Automatically restart the server weekly
+
+* The VPL jail server service will automatically run when after the server restarts
+
+* To automatically restart the server every week in Ubuntu 20.04, you can set up a **cron** job to schedule the restart.
+
+    ` crontab -e`
+* In the crontab file, add the following line to schedule the server restart every week:
+    `0 0 * * 0 reboot`
+
+
+---
+
+![bg right:15%](img/bg.png)
+
+# Automatically reinstall the VPL jail system monthly
+
+* To automatically reinstall the VPL jail system from the installer every month in Ubuntu 20.04, you can set up a **cron** job to schedule the reinstall.
+
+    ` crontab -e`
+
+* In the crontab file, add the following line to schedule the system reinstall on the first day of every month:
+
+```
+0 0 1 * * cd ~; cd vpl-jail-system-4.0.2; ./install-vpl-sh full noninteractive start
+```
+
+> no need to do any manual commands at this point
+
+---
+
+![bg right:15%](img/bg.png)
+
+# Add the server address to your list of VPL Execution servers
+
+* We simply use the IP address 
+
+```
+http://xxx-xxx-xxx-101.ip.linodeusercontent.com
+http://xxx.xxx.xxx.101
+```
+
+* We can also add local (LAN) servers here.  
+* We can also add VirtualBox servers (housed in our laptops) here.  
+
+---
+
+![bg right:15%](img/bg.png)
+
+<div class="w3-display-left">
+
+# ____ At this point, **VPL should already be usable.  :)**
+
+</div>
 
 ---
 
