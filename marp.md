@@ -128,7 +128,7 @@ timeline
     : Anti Plagiarism tools
     : Multi-language support
     Setup : Moodle VPL plugin
-    : Execution Server
+    : **Execution Server**
 </div>
 
 
@@ -385,6 +385,22 @@ Supported Programming Languages
 
 
 
+![bg right:15%](img/bg.png)
+
+<div class="w3-container w3-black w3-center" style="position: absolute; top: 50; left: 50;">
+  <p class="w3-text-white" style="font-size: 50px; font-family: 'Courier New', monospace;">03</p>
+</div>
+
+
+<div class="w3-display-middle w3-jumbo">
+  VPL Secure and Cost-Effective Setup
+</div>
+
+
+---
+
+
+
 
 ![bg left:25%](img/lightbulb-student.png)
 
@@ -428,9 +444,15 @@ Supported Programming Languages
 
 <div class="w3-margin w3-padding-large w3-xxlarge w3-display-left">
 
-# How did we get our own Jail server? 
+# How did we get our own Jail server??? 
+  
+* VirtualBox servers (housed in our laptops) 
+* Local (LAN) servers here.
+* Cloud servers!  :)
 
 </div>
+
+
 
 ---
 
@@ -478,6 +500,24 @@ Supported Programming Languages
 2. Run the installer as root
   `sudo ./install-vpl-sh full start`
 ---
+
+
+![bg right:15%](img/bg.png)
+
+<div class="w3-container w3-black w3-center" style="position: absolute; top: 50; left: 50;">
+  <p class="w3-text-white" style="font-size: 50px; font-family: 'Courier New', monospace;">04</p>
+</div>
+
+
+<div class="w3-display-middle w3-xxlarge">
+  
+  # VPL config of  Philippine Science High School - MC
+</div>
+
+
+---
+
+
 
 ![bg right:15%](img/bg.png)
 
@@ -587,45 +627,71 @@ http://xxx-xxx-xxx-101.ip.linodeusercontent.com
 http://xxx.xxx.xxx.101
 ```
 
-* We can also add local (LAN) servers here.  
-* We can also add VirtualBox servers (housed in our laptops) here.  
+# __
 
----
+<div class="w3-center">
 
-![bg right:15%](img/bg.png)
-
-<div class="w3-display-left">
-
-# ____ At this point, **VPL should already be usable.  :)**
+![](img/server_list.png)
 
 </div>
 
 ---
 
-# Citations
+![bg right:35%](img/cs-class.png)
 
-* AI-gen picture: Leonardo AI. 2024. https://app.leonardo.ai/ai-generations
-* AI-gen picture: Cici AI. 2024. https://www.ciciai.com/chat
-* icons: Font Awesome. 2024. https://fontawesome.com/v6/
+<div class="w3-display-middle">
 
----
+#  VPL should now be **ready for class**.  :)
 
-# Introduction
-
-- Greeting and introduction
-- Brief explanation of the Moodle VPL plugin
-- Overview of the importance of programming education and the need for practical programming assignments
+</div>
 
 ---
 
-# Understanding the Moodle VPL Plugin
+![bg left:45%](img/smiley.png)
 
-+ Explanation of what the Moodle VPL plugin is and its purpose
-+_ Key features and benefits of using the Moodle VPL plugin
-+ Supported programming languages and environments
-+ Overview of the user roles and their responsibilities (instructors and students)
+
+<div class="w3-xxxlarge">
+
+# Thanks!
+
+### Do you have any questions?
+
+#### __
+
+roy@pshs.edu.ph
+
+</div>
+
 
 ---
+
+
+# Resources
+
+* AI-gen picture: **Leonardo AI**. 2024. https://app.leonardo.ai/ai-generations
+* AI-gen picture: **Cici AI**. 2024. https://www.ciciai.com/chat
+* icons: **Font Awesome**. 2024. https://fontawesome.com/v6/
+* Slides template was created by **Slidesgo** , ported to **Marp**
+
+---
+
+
+
+![bg right:15%](img/bg.png)
+
+<div class="w3-container w3-black w3-center" style="position: absolute; top: 50; left: 50;">
+  <p class="w3-text-white" style="font-size: 50px; font-family: 'Courier New', monospace;">0X</p>
+</div>
+
+
+<div class="w3-display-middle w3-xxlarge">
+  
+  # Extra slides for Workshop
+</div>
+
+
+---
+
 
 # Creating Programming Assignments with Moodle VPL
 
@@ -656,12 +722,7 @@ http://xxx.xxx.xxx.101
 
 ---
 
-# Q&A Session
 
-- Allocating time for questions and answers
-- Addressing any concerns or queries from the audience
-
----
 
 # Conclusion
 
