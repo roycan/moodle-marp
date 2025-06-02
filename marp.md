@@ -17,6 +17,8 @@ footer: ![w:150](img/footer.png) &copy; <span class="w3-center"> Canseco 2024 </
 
 ---
 
+
+
 <!-- _footer: - -->
 
 ![bg right:15%](img/bg.png)
@@ -128,10 +130,11 @@ timeline
     : Anti Plagiarism tools
     : Multi-language support
     Setup : Moodle VPL plugin
-    : Execution Server
+    : **Execution Server**
 </div>
 
 
+<!-- ask the participants what they think are the biggest problems with teaching CS-->
 
 
 ---
@@ -175,26 +178,43 @@ According to a study funded by Google, under the direction of ACM, and in partne
 ![bg opacity](img/kids.jpg)
 
 <div class="w3-row"> 
-  <div class="w3-col s5">
+  <div class="w3-col s3">
 
-  # Virtual Programming Laboratory
+  # Benefits
 
-  </div>
-  <div class="w3-col s7">
-  <div class="mermaid w3-center">
-  graph LR
-    MoodleVPL[Moodle VPL] --> InteractiveProgramming["Interactive      Programming      Assignments"]
-    MoodleVPL --> WebBasedEnvironment["Web-Based Programming Environment"]
-    MoodleVPL --> SecureSandbox["Secure Sandbox Environment"]
-    MoodleVPL --> MultipleLanguages["Support for Multiple Programming Languages"]
-    MoodleVPL --> AutomaticGrading["Automatic Grading and Feedback"]
-    MoodleVPL --> PlagiarismChecker["
-  Plagiarism Checker"]
+  ### Virtual Programming Laboratory
 
   </div>
+  <div class="w3-col s9">
+<div class="mermaid">
+mindmap
+  root(("Moodle VPL"))
+    **Student** 
+    ::icon(fas fa-user-graduate)
+      Interactive      Programming      Assignments
+      ::icon(fas fa-terminal)
+      Web-Based Programming Environment
+      ::icon(fas fa-laptop-code)
+      Secure Sandbox Environment
+      ::icon(fas fa-shield-alt)
+    **Teacher**
+    ::icon(fas fa-chalkboard-teacher)
+      Support for Multiple Programming Languages
+      ::icon(fas fa-code)
+      Automatic Grading and Feedback
+      ::icon(fas fa-check)
+      Plagiarism Checker
+      ::icon(fas fa-user-secret)
+    
+
+</div>
   </div>
 
 </div>
+
+
+<!-- this potentially alleviates the software and hardware problem-->
+
 
 ---
 
@@ -273,6 +293,8 @@ mindmap
 
 </div>
 
+<!-- ask the audience what languages they use-->
+
 ---
 
 <!-- _footer: - -->
@@ -328,6 +350,11 @@ Supported Programming Languages
 </div>
 
 
+<!-- this essentially generates learning materials for the students as long as we seed it right.
+
+Thereby solving our decade-long problem with software, hardware and up-to-date materials 
+
+personal sharing with AI-gen exams and solutions -->
 
 
 ---
@@ -385,6 +412,25 @@ Supported Programming Languages
 
 
 
+![bg right:15%](img/bg.png)
+
+<div class="w3-container w3-black w3-center" style="position: absolute; top: 50; left: 50;">
+  <p class="w3-text-white" style="font-size: 50px; font-family: 'Courier New', monospace;">03</p>
+</div>
+
+
+<div class="w3-display-middle w3-jumbo">
+  VPL Secure and Cost-Effective Setup
+</div>
+
+
+<!-- Talk about the personal experience with CS2 CS3 CS4 CS5  -->
+
+
+---
+
+
+
 
 ![bg left:25%](img/lightbulb-student.png)
 
@@ -428,9 +474,15 @@ Supported Programming Languages
 
 <div class="w3-margin w3-padding-large w3-xxlarge w3-display-left">
 
-# How did we get our own Jail server? 
+# How did we get our own Jail server??? 
+  
+* VirtualBox servers (housed in our laptops) 
+* Local (LAN) servers here.
+* Cloud servers!  :)
 
 </div>
+
+
 
 ---
 
@@ -479,6 +531,24 @@ Supported Programming Languages
   `sudo ./install-vpl-sh full start`
 ---
 
+
+![bg right:15%](img/bg.png)
+
+<div class="w3-container w3-black w3-center" style="position: absolute; top: 50; left: 50;">
+  <p class="w3-text-white" style="font-size: 50px; font-family: 'Courier New', monospace;">04</p>
+</div>
+
+
+<div class="w3-display-middle w3-xxlarge">
+  
+  # VPL config of  Philippine Science High School - MC
+</div>
+
+
+---
+
+
+
 ![bg right:15%](img/bg.png)
 
 # Tips for installing for the first time: 
@@ -505,9 +575,9 @@ cd vpl-jail-system-4.0.2
 ./install-vpl-sh full noninteractive start
 ```
 
-* This will renew your Let's Encrypt SSL certificate
-* You can run the code sooner if notice any problems with the VPL Jail Server
-* prepare to wait a bit, but the terminal should show you how things are going.
+- This will renew your Let's Encrypt SSL certificate
+- You can run the code sooner if notice any problems with the VPL Jail Server
+- Prepare to wait a bit, but the terminal should show you how things are going.
 
 ---
 
@@ -518,9 +588,9 @@ cd vpl-jail-system-4.0.2
 ## `./install-vpl-sh full noninteractive start`
 # -
 
-* **full** means to install all the languages it fully supports
-* **noninteractive** means to NOT ask you to do anything
-* **start** means to start the server once the installation is finished
+- **full** means to install all the languages it fully supports
+- **noninteractive** means to NOT ask you to do anything
+- **start** means to start the server once the installation is finished
 
 ---
 
@@ -535,9 +605,9 @@ cd vpl-jail-system-4.0.2
 * In the crontab file, to restart the service every day at 3:00 AM, you can use:
 
 
-`0 3 * * * systemctl restart vpl-jail-system.service `
+* `0 3 * * * systemctl restart vpl-jail-system.service `
 
->  When setting up cron jobs, it's important to ensure that the user running the cron job has the necessary permissions to restart the service.
+*  When setting up cron jobs, it's important to ensure that the user has the **right permissions** (e.g. root) to restart the service.
 
 ---
 
@@ -547,12 +617,12 @@ cd vpl-jail-system-4.0.2
 
 # Automatically restart the server weekly
 
-* The VPL jail server service will automatically run when after the server restarts
+- The VPL jail server service will automatically run when after the server restarts
 
-* To automatically restart the server every week in Ubuntu 20.04, you can set up a **cron** job to schedule the restart.
+- To automatically restart the server every week in Ubuntu 20.04, you can set up a **cron** job to schedule the restart.
 
     ` crontab -e`
-* In the crontab file, add the following line to schedule the server restart every week:
+- In the crontab file, add the following line to schedule the server restart every week:
     `0 0 * * 0 reboot`
 
 
@@ -562,11 +632,11 @@ cd vpl-jail-system-4.0.2
 
 # Automatically reinstall the VPL jail system monthly
 
-* To automatically reinstall the VPL jail system from the installer every month in Ubuntu 20.04, you can set up a **cron** job to schedule the reinstall.
+- To automatically reinstall the VPL jail system from the installer every month in Ubuntu 20.04, you can set up a **cron** job to schedule the reinstall.
 
     ` crontab -e`
 
-* In the crontab file, add the following line to schedule the system reinstall on the first day of every month:
+- In the crontab file, add the following line to schedule the system reinstall on the first day of every month:
 
 ```
 0 0 1 * * cd ~; cd vpl-jail-system-4.0.2; ./install-vpl-sh full noninteractive start
@@ -587,45 +657,71 @@ http://xxx-xxx-xxx-101.ip.linodeusercontent.com
 http://xxx.xxx.xxx.101
 ```
 
-* We can also add local (LAN) servers here.  
-* We can also add VirtualBox servers (housed in our laptops) here.  
+# __
 
----
+<div class="w3-center">
 
-![bg right:15%](img/bg.png)
-
-<div class="w3-display-left">
-
-# ____ At this point, **VPL should already be usable.  :)**
+![](img/server_list.png)
 
 </div>
 
 ---
 
-# Citations
+![bg right:35%](img/cs-class.png)
 
-* AI-gen picture: Leonardo AI. 2024. https://app.leonardo.ai/ai-generations
-* AI-gen picture: Cici AI. 2024. https://www.ciciai.com/chat
-* icons: Font Awesome. 2024. https://fontawesome.com/v6/
+<div class="w3-display-middle">
 
----
+#  VPL should now be **ready for class**.  :)
 
-# Introduction
-
-- Greeting and introduction
-- Brief explanation of the Moodle VPL plugin
-- Overview of the importance of programming education and the need for practical programming assignments
+</div>
 
 ---
 
-# Understanding the Moodle VPL Plugin
+![bg left:45%](img/smiley.png)
 
-+ Explanation of what the Moodle VPL plugin is and its purpose
-+_ Key features and benefits of using the Moodle VPL plugin
-+ Supported programming languages and environments
-+ Overview of the user roles and their responsibilities (instructors and students)
+
+<div class="w3-xxxlarge">
+
+# Thanks!
+
+### Do you have any questions?
+
+#### __
+
+roy@pshs.edu.ph
+
+</div>
+
 
 ---
+
+
+# Resources
+
+- AI-gen picture: **Leonardo AI**. 2024. https://app.leonardo.ai/ai-generations
+- AI-gen picture: **Cici AI**. 2024. https://www.ciciai.com/chat
+- icons: **Font Awesome**. 2024. https://fontawesome.com/v6/
+- Slides template was created by **Slidesgo** , ported to **Marp**
+
+---
+
+
+
+![bg right:15%](img/bg.png)
+
+<div class="w3-container w3-black w3-center" style="position: absolute; top: 50; left: 50;">
+  <p class="w3-text-white" style="font-size: 50px; font-family: 'Courier New', monospace;">0X</p>
+</div>
+
+
+<div class="w3-display-middle w3-xxlarge">
+  
+  # Extra slides for Workshop
+</div>
+
+
+---
+
 
 # Creating Programming Assignments with Moodle VPL
 
@@ -656,12 +752,7 @@ http://xxx.xxx.xxx.101
 
 ---
 
-# Q&A Session
 
-- Allocating time for questions and answers
-- Addressing any concerns or queries from the audience
-
----
 
 # Conclusion
 
